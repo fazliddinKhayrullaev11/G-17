@@ -1,0 +1,141 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    background-color: rgb(204, 0, 255);
+}
+/* .main-c{
+    height:100vh;
+    width: 100%;
+    background-color: rgb(0, 136, 255);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+} */
+
+.table{
+    width: 1200px;
+    height: 600px;
+    margin-left: 200px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    outline: none;
+    text-decoration: none;
+ 
+   color: white;
+}
+.navbars{
+    margin-left: 200px;
+}
+.footers{
+    margin-left: 200px;
+    margin-bottom: 150px;
+    display: flex;
+    align-items: center;
+   
+}
+.search-inp{
+    width: 985px;
+    height: 40px;
+    font-size: 20px;
+    background-color: rgb(214, 207, 240);
+    color: rgb(255, 255, 255);
+    border: 1px solid white;
+    border-radius: 6px;
+    outline: none;
+    text-decoration: none;
+}
+.sel-opt{
+    width: 200px;
+    height: 40px;
+    margin-left: 10px;
+    font-size: 20px;
+    background-color: rgb(101, 80, 176);
+    color: white;
+    border-radius: 5px;
+    border: 1px solid white;
+}
+.hobby-inp{
+    width: 200px;
+    height: 40px;
+    margin-left: 30px;
+    font-size: 20px;
+    background-color: rgb(214, 207, 240);
+    color: rgb(255, 255, 255);
+    border: 1px solid white;
+    border-radius: 6px;
+    outline: none;
+    text-decoration: none;
+
+}
+.nation-inp{
+    width: 200px;
+    height: 40px;
+    margin-left: 30px;
+    font-size: 20px;
+    background-color: rgb(214, 207, 240);
+    color: rgb(255, 255, 255);
+    border: 1px solid white;
+    border-radius: 6px;
+    outline: none;
+    text-decoration: none;
+
+}
+.status-inp{
+    width: 200px;
+    height: 40px;
+    margin-left: 30px;
+    font-size: 20px;
+    background-color: rgb(214, 207, 240);
+    color: rgb(255, 255, 255);
+    border: 1px solid white;
+    border-radius: 6px;
+    outline: none;
+    text-decoration: none;
+}
+.surname-inp{
+    width: 200px;
+    height: 40px;
+    margin-left: 30px;
+    font-size: 20px;
+    background-color: rgb(214, 207, 240);
+    color: rgb(255, 255, 255);
+    border: 1px solid white;
+    border-radius: 6px;
+    outline: none;
+    text-decoration: none;
+}
+.name-inp{
+    width: 200px;
+    height: 40px;
+    font-size: 20px;
+    background-color: rgb(214, 207, 240);
+    color: rgb(255, 255, 255);
+    border: 1px solid white;
+    border-radius: 6px;
+    outline: none;
+    text-decoration: none;
+}
+.add-btn{
+  
+    width: 140px;
+    height: 30px;
+    font-size: 20px;
+    color: blue;
+   size: 100px;
+}
+.save-btn{
+   width: 50px;
+   height: 25px;
+}
+.edit-btn{
+    width: 50px;
+    height: 25px;
+ }
+ .del-btn{
+    width: 50px;
+    height: 25px;
+ }
+ td{
+    font-size: 20px;
+ }
