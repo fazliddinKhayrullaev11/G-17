@@ -1,6 +1,6 @@
 import { Component } from "react";
-import data from "../utilis/mock.jsx"
-import "../Lesson-5/style.css"
+import people from "../Lesson-5/data";
+import "../Lesson-5/style.css";
 import { BiTrash ,BiPencil,BiTask,BiBookAdd} from "react-icons/bi";
 
 
@@ -16,7 +16,7 @@ class ToDoList extends Component{
         nation:'',
         hobby:'',
         search:'id',
-        people:data,
+       people:data,
         active:null,
     }
    }
@@ -26,7 +26,7 @@ class ToDoList extends Component{
 
  let onSearch=(e)=>{
     const{value}=e.target;
-    let fil=data.filter((item)=>
+    let fil=people.filter((item)=>
     `${item[this.state.search]}`.toLowerCase().includes(value.toLowerCase())
   );
   this.setState({
@@ -61,7 +61,7 @@ class ToDoList extends Component{
        
     
     this.setState({
-        people:[user, ...this.state.people],
+        data:[user, ...this.state.people],
         name:'',
         surname:'',
         status:'',
@@ -71,16 +71,16 @@ class ToDoList extends Component{
 
   };
   let onDelete=(id)=>{
-    let del=this.state.people.filter((value)=>value.id!==id);
+    let del=this.state.data.filter((value)=>value.id!==id);
     this.setState({
-        people:del
+        data:del
 
     })
 
   };
   let onEdit=({id,name,surname,status,nation,hobby},IsSave)=>{
 
-    let res=this.state.people.map((value)=>value.id=== this.state.active?.id?
+    let res=this.state.data.map((value)=>value.id=== this.state.active?.id?
     {
 ...value,
 name:this.state.name,
@@ -95,7 +95,7 @@ hobby:this.state.hobby,
     if(IsSave){
         this.setState({
             active:null,
-            people:res,
+            data:res,
         })
 
     } else {
@@ -150,7 +150,7 @@ hobby:this.state.hobby,
     <tbody>
     {
         this.state.people.length?
-    this.state.people.map(({id,name,surname,status,nation,hobby})=>{
+    this.state.data.map(({id,name,surname,status,nation,hobby})=>{
         return(
             <tr key={id}>
             <td>{id}</td>

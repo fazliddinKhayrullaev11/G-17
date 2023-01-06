@@ -1,13 +1,16 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
-import App from './App';
+// import App from './App';
+import StyledComp from '../src/lesson_passed/index.jsx'
+// import  ToDoList from '../../g-17/src/Lesson-5/index.jsx'
+
 import reportWebVitals from './reportWebVitals';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <App />
+    <StyledComp/>
   </React.StrictMode>
 );
 
