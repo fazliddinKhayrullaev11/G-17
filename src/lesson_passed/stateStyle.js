@@ -1,67 +1,82 @@
-import styled, { css } from 'styled-components'
-
-
- export const Container=styled('div')`
-
-width: 100%;
-height: 100vh;
-display: flex;
-
-background: rgb(131,58,180);
-background: linear-gradient(90deg, rgba(131,58,180,1) 0%, rgba(253,29,29,1) 50%, rgba(252,176,69,1) 100%);
-
-
-`
-let common =css`
-font-size:55px;
-
-
-`
-export let Child=styled.h1`
-${common}
-
-font-family: cursive;
+import styled, { css, keyframes } from 'styled-components'
 
 
 
 
 
-`
-const getSize=(props)=>{
-    switch(props.type){
-        case 'large':
-            return '200px';
-        case 'medium':
-            return '150px';
-        case 'small':
-            return '100px';
-            default:
-                return '100px'
-    }
+ const rotate=keyframes`
+ from{
+    transform:rotate(0deg);
+ }
+ to{
+
+transform:rotate(360deg);
+
+ }
+ 
+ `
+
+
+
+
+ export let Container=styled.div`
+ margin: 20px;
+
+
+ 
+ `
+
+ let common =css`
+ width: 200px;
+
+:active{
+   transform:scale(0.95)
 }
-export let Box =styled.div`
-${common}
- border-radius:${(props)=>props.br};
-width:${getSize};
-height:${getSize};
-  border: 15px solid green;
-  padding: 50px;
-  margin: 20px;
-  background: rgb(131,58,180);
-background: linear-gradient(90deg, rgba(131,58,180,1) 0%, rgba(29,253,43,1) 50%, rgba(252,176,69,1) 100%);
+
+display: flex;
+justify-content:center;
+align-items:center;
+border-radius: 5px;
+cursor: pointer;
+background: coral;
+font-size: 20px;
+font-family:Arial, Helvetica, sans-serif;
+color:white;
+height: 40px;
+text-decoration:none;
+outline:none;
+border:1px solid white;
+margin: 10px;
+
+
+ 
+ 
+ 
+ `
+ export const Button =styled.button`
+  ${common}
+ `
+ export let ActiveButton=styled(Button)`
+ 
+  height: 55px;
+ 
+ 
+ `;
+
+
+export let Rotate=styled.div`
+display: flex;
+justify-content:center;
+align-items:center;
+width: 200px;
+height: 200px;
+border-radius :50%;
+animation:${rotate} 2s linear infinite;
+border:1px solid coral;
+
+
 
 `
-export let Child1=styled.h1`
-${common}
-font-family: cursive;
-
-
-
-
-
-
-`
-
 
 
 
